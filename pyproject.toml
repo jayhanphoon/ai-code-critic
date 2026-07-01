@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-code-critic"
+version = "0.1.0"
+description = "AI-powered security code review for Python — scans source files and displays findings as a colour-coded table."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Code Reviews",
+]
+
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/ai-code-critic"
+Repository = "https://github.com/your-username/ai-code-critic.git"
+BugTracker = "https://github.com/your-username/ai-code-critic/issues"
+
+[project.scripts]
+ai-code-critic = "ai_code_critic.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-data = {"ai_code_critic" = ["py.typed"]}
