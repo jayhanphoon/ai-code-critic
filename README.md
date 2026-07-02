@@ -137,3 +137,10 @@ ai-code-critic --help
 ## License
 
 MIT
+
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jayhanphoon/ai-code-critic&type=Date)](https://star-history.com/jayhanphoon/ai-code-critic)
